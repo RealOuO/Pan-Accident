@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="css/option.css" />
+		<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+	</head>
+
+	<body>
+
+		<div class="content">
+			<h2>插件配置:</h2>
+
+			<div class="tab">
+				<button id="btSwitch" class="tablinks">功能开关</button>
+				<button id="btList" class="tablinks" >关键字列表</button>
+				<button id="btContact" class="tablinks">联系我</button>
+			</div>
+
+			<div id="Switch" class="tabcontent">
+				<h3>功能开关</h3>
+				<lable>关闭</lable>
+				<label class="switch">
+				  <input type="checkbox" checked id = "ckSwitch">
+				  <div class="slider round">
+				  </div>
+				</label>
+				<lable>开启</lable>
+			</div>
+
+			<div id="List" class="tabcontent">
+				<div id="myDIV" class="header">
+					<h2>已加入自动保存的关键字列表</h2>
+					<input type="text" id="myInput" placeholder="Title...">
+					<span id="AddKey" class="addBtn">Add</span>
+				</div>
+				<div style="height:300px;overflow:auto;">
+					<ul id="myUL">
+					</ul>
+				</div>
+			</div>
+
+			<div id="Contact" class="tabcontent">
+				<h3>有问题联系我</h3>
+				<div class="card">
+					<div class="img">
+						<img src="img/test.jpg" alt="Real" class="person-avatar">
+					</div>
+					<div class="container">
+						<h1>Real Li</h1>
+						<p class="title">插件开发</p>
+						<p>苦逼码农啊！</p>
+						<div style="margin: 24px 0;">
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+							<a href="#"><i class="fa fa-facebook"></i></a>
+						</div>
+						<p><button>Contact</button></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/setting.js"></script>
+	</body>
+
+</html>

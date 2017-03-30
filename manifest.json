@@ -1,0 +1,35 @@
+{
+  "name": "pan助手",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "百度网盘小助手，自动保存视频到网盘",
+  "content_scripts": [
+    {
+      "matches": ["http://pan.baidu.com/*", "https://pan.baidu.com/*"],
+      "js": ["js/jquery-2.0.3.min.js", "js/script.js"]
+    }
+  ],
+  "page_action" :
+  {
+    "default_icon" : "img/icon.png",
+    "default_title" : "百度网盘小助手!"
+  },
+    "icons": {
+        "16": "img/icon16.png",
+		"48": "img/icon48.png",
+		"128": "img/icon48.png"
+    },
+    "permissions": [
+        "contextMenus",
+		"storage",
+		"activeTab",
+        "tabs",
+		"declarativeContent"
+    ],
+	"options_page": "options.html",
+    "background": {
+        "scripts": [
+            "js/jquery-2.0.3.min.js", "js/background.js"
+        ]
+    }
+}
